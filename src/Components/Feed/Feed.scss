@@ -1,0 +1,38 @@
+.Feed{
+    display: flex;
+    height: 130px;
+    padding:10px;
+    &_button{
+        border: none;
+        background-color: rgb(255, 255, 255);
+        height: 120px;
+        width: 18%;
+        margin-left: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    &_button:hover{
+        background-color: rgb(194, 193, 193);
+    }
+}
+
+@media only screen and (max-width:63.9375em){
+    .Feed{
+        overflow-y: hidden;
+        display: flex;
+        margin-top: 12px;
+        margin-bottom: 8px;
+        margin-right: -4px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+        button{
+            width: 28%;  
+            padding: 5px;
+            margin: 5px;
+        }
+    }   
+}

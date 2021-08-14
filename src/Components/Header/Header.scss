@@ -1,0 +1,241 @@
+.header {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  height: 50px;
+  // top: 0;
+  
+  box-shadow: 0 5px 8px -9px rgba(126, 125, 125, 0.75);
+  &_left {
+    display: flex;
+    padding: 10px;
+    padding-left: 15px;
+    margin-left: 10px;
+  }
+  &_input {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(199, 195, 194);
+    input {
+      width: 500px;
+      height:25px;
+      border: none;
+    }
+    button {
+      border: none;
+      background-color: white;
+      height: 25px;
+      color: rgb(145, 144, 143);
+    }
+    button:hover {
+      color: black;
+    }
+  }
+  &_button {
+    display: flex;
+    &-search {
+      background-color: rgb(231, 231, 231);
+      height: 30px;
+      width: 80px;
+      border-width: 1px;
+      margin-right: 5px;
+      border: 1px solid rgb(199, 195, 194);
+      border-left: none;
+    }
+    &-search:hover {
+      background-color: rgb(194, 193, 193);
+    }
+    &-mic {
+      border: none;
+      background-color: rgb(231, 231, 231);
+      height: 30px;
+      margin-left: 5px;
+      text-align: center;
+      border-radius: 49%;
+      border: none;
+    }
+    &-mic:hover {
+      background-color: rgb(194, 193, 193);
+    }
+  }
+  &_right {
+    display: flex;
+    padding: 10px;
+    margin-left: 20%;
+  }
+  &_icon {
+    display: flex;
+    padding-left: 20px;
+    margin-left: 2%;
+  }
+  &_user_menu {
+    width: 27%;
+    display: block;
+    padding: 10px;
+    padding-top: 20px;
+    position: absolute;
+    top: 40px;
+    right: 3%;
+    background-color: white;
+    cursor: pointer;
+    z-index: 99;
+  }
+  & .user_menu {
+    display: none;
+    &_img {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      margin-bottom: 10px;
+      
+      & .head_img {
+        width: 80px;
+        height: 80px;
+        img {
+          width: 50%;
+          height: 50%;
+          border-radius: 50px;
+          margin-top: 20px;
+        }
+      }
+    }
+    &_inf {
+      margin-left: -9%;
+      h4 {
+        font-size: 17px;
+      }
+      h5 {
+        color: rgb(8, 77, 226);
+        font-size: 13px;
+      }
+    }
+    &_section {
+        display:flex;
+        grid-template-columns: 15% 70%;
+        gap: 5px;
+        text-align: left;
+        &_icon{
+            i{
+                font-size: 30px;
+                margin-top: 10%;
+
+            }
+        }
+        &_title {
+            p {
+                margin-top: 10%;
+                font-size: 13px;
+            }
+        }
+        &_icon-1{
+            i{
+                font-size: 30px;
+                margin-top: 10%;
+
+            }
+        }
+        &_title-1 {
+            p {
+                margin-top: 10%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &_bot {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      gap: 5px;
+      padding: 3-px 0 0;
+      text-align: left;
+
+      i {
+        font-size: 20px;
+      }
+      p {
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  li {
+    list-style: none;
+  }
+  .searchTerm{
+    position: fixed;
+    padding-left: 3.5%;
+    margin-top: 3%;
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+  }
+}
+
+/* tablet */
+
+@media only screen and(min-width:46.25em)and(max-width:63.9375em){
+    .header {
+        width: 50%;
+        &_input {
+            input{
+                width: 250px;
+            }
+        }
+        &_user_menu{
+          width: 40%;
+          &_section{
+            font-size: 11px;
+          }
+        }
+        .searchTerm{
+          margin-top: 4.5%;
+          padding-left: 6%;
+        }
+    }
+    
+}
+
+
+/* mobile*/
+
+@media only screen and(max-width:46.1875em){
+    .header {
+        width: auto;
+        &_input {
+            input{
+                width: 70px;
+            }
+            &-btn{
+              display: none;
+            }
+        }
+        &_button {
+            &-search{
+                width: 30px;
+            }
+        }
+        &_right {
+            margin-left: -2%;
+          }
+          &_icon {
+            display: flex;
+            padding-left: 10px;
+            margin-left: 2px;
+          }
+
+        &_user_menu{
+          width: 70%;
+          &_section{
+            font-size: 11px;
+          }
+        }
+        .searchTerm{
+          margin-top: 9%;
+          padding-left: 8%;
+          font-size: 11px;
+        }
+        
+    }
+    
+}

@@ -1,0 +1,52 @@
+.Feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f3;
+  height: 130px;
+  padding: 10px;
+}
+
+.Feed_button {
+  border: none;
+  background-color: white;
+  height: 120px;
+  width: 18%;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.Feed_button:hover {
+  background-color: #c2c1c1;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .Feed {
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    margin-right: -4px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+  }
+  .Feed button {
+    width: 28%;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+/*# sourceMappingURL=Feed.css.map */

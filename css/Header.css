@@ -1,0 +1,242 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 8px -9px rgba(201, 198, 198, 0.75);
+          box-shadow: 0 5px 8px -9px rgba(201, 198, 198, 0.75);
+}
+
+.header_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+
+.header_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #c7c3c2;
+}
+
+.header_input input {
+  width: 500px;
+  height: 25px;
+  border: none;
+}
+
+.header_input button {
+  border: none;
+  background-color: white;
+  height: 25px;
+  color: #91908f;
+}
+
+.header_input button:hover {
+  color: black;
+}
+
+.header_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_button-search {
+  background-color: #e7e7e7;
+  height: 30px;
+  width: 80px;
+  border-width: 1px;
+  margin-right: 5px;
+  border: 1px solid #c7c3c2;
+  border-left: none;
+}
+
+.header_button-search:hover {
+  background-color: #c2c1c1;
+}
+
+.header_button-mic {
+  border: none;
+  background-color: #e7e7e7;
+  height: 30px;
+  margin-left: 5px;
+  text-align: center;
+  border-radius: 49%;
+  border: none;
+}
+
+.header_button-mic:hover {
+  background-color: #c2c1c1;
+}
+
+.header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-left: 20%;
+}
+
+.header_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  margin-left: 2%;
+}
+
+.header_user_menu {
+  width: 27%;
+  display: block;
+  padding: 10px;
+  padding-top: 20px;
+  position: absolute;
+  top: 40px;
+  right: 3%;
+  background-color: white;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.header .user_menu {
+  display: none;
+}
+
+.header .user_menu_img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  margin-bottom: 10px;
+}
+
+.header .user_menu_img .head_img {
+  width: 80px;
+  height: 80px;
+}
+
+.header .user_menu_img .head_img img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.header .user_menu_inf {
+  margin-left: -9%;
+}
+
+.header .user_menu_inf h4 {
+  font-size: 17px;
+}
+
+.header .user_menu_inf h5 {
+  color: #084de2;
+  font-size: 13px;
+}
+
+.header .user_menu_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 15% 70%;
+      grid-template-columns: 15% 70%;
+  gap: 5px;
+  text-align: left;
+}
+
+.header .user_menu_section_icon i {
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+.header .user_menu_section_title p {
+  margin-top: 10%;
+  font-size: 13px;
+}
+
+.header .user_menu_section_icon-1 i {
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+.header .user_menu_section_title-1 p {
+  margin-top: 10%;
+  font-size: 14px;
+}
+
+.header .user_menu_bot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  gap: 5px;
+  padding: 3-px 0 0;
+  text-align: left;
+}
+
+.header .user_menu_bot i {
+  font-size: 20px;
+}
+
+.header .user_menu_bot p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.header li {
+  list-style: none;
+}
+
+/* tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .header {
+    width: 50%;
+  }
+  .header_input input {
+    width: 250px;
+  }
+  .header_user_menu {
+    width: 40%;
+  }
+  .header_user_menu_section {
+    font-size: 11px;
+  }
+}
+
+/* mobile*/
+@media only screen and (max-width: 46.1875em) {
+  .header {
+    width: auto;
+  }
+  .header_input input {
+    display: none;
+  }
+  .header_button-search {
+    width: 40px;
+  }
+  .header_right {
+    margin-left: 5%;
+  }
+  .header_user_menu {
+    width: 70%;
+  }
+  .header_user_menu_section {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=header.css.map */
